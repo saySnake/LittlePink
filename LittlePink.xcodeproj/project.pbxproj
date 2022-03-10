@@ -14,6 +14,7 @@
 		729950DF27D991AF00F0ECCA /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 729950DD27D991AF00F0ECCA /* LittlePink.xcdatamodeld */; };
 		729950E127D991B000F0ECCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729950E027D991B000F0ECCA /* Assets.xcassets */; };
 		729950E427D991B000F0ECCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729950E227D991B000F0ECCA /* LaunchScreen.storyboard */; };
+		729950EC27D9938800F0ECCA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 729950EB27D9938800F0ECCA /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		729950E027D991B000F0ECCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		729950E327D991B000F0ECCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		729950E527D991B000F0ECCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		729950EB27D9938800F0ECCA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +44,7 @@
 		729950C827D991AF00F0ECCA = {
 			isa = PBXGroup;
 			children = (
+				729950EB27D9938800F0ECCA /* .gitignore */,
 				729950D327D991AF00F0ECCA /* LittlePink */,
 				729950D227D991AF00F0ECCA /* Products */,
 			);
@@ -127,6 +130,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				729950EC27D9938800F0ECCA /* .gitignore in Resources */,
 				729950E427D991B000F0ECCA /* LaunchScreen.storyboard in Resources */,
 				729950E127D991B000F0ECCA /* Assets.xcassets in Resources */,
 				729950DC27D991AF00F0ECCA /* Main.storyboard in Resources */,
@@ -300,7 +304,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shanghai.doc.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -319,7 +323,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = shanghai.doc.LittlePink;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
