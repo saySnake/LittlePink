@@ -13,8 +13,9 @@
 		729950DC27D991AF00F0ECCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729950DA27D991AF00F0ECCA /* Main.storyboard */; };
 		729950DF27D991AF00F0ECCA /* LittlePink.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 729950DD27D991AF00F0ECCA /* LittlePink.xcdatamodeld */; };
 		729950E127D991B000F0ECCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 729950E027D991B000F0ECCA /* Assets.xcassets */; };
-		729950E427D991B000F0ECCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729950E227D991B000F0ECCA /* LaunchScreen.storyboard */; };
 		729950EC27D9938800F0ECCA /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 729950EB27D9938800F0ECCA /* .gitignore */; };
+		729ECE8127D9D3AF00BDEE56 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 729ECE8027D9D3AF00BDEE56 /* Launch Screen.storyboard */; };
+		BCB092617FE18914C95E7E6C /* Pods_LittlePink.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECCA53BA0E03B891FE9F8CD5 /* Pods_LittlePink.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +26,12 @@
 		729950DB27D991AF00F0ECCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		729950DE27D991AF00F0ECCA /* LittlePink.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LittlePink.xcdatamodel; sourceTree = "<group>"; };
 		729950E027D991B000F0ECCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		729950E327D991B000F0ECCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		729950E527D991B000F0ECCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		729950EB27D9938800F0ECCA /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		729ECE8027D9D3AF00BDEE56 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		C436B2239D8A62A074D88030 /* Pods-LittlePink.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.release.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.release.xcconfig"; sourceTree = "<group>"; };
+		D793ED504BFD734F43A87884 /* Pods-LittlePink.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LittlePink.debug.xcconfig"; path = "Target Support Files/Pods-LittlePink/Pods-LittlePink.debug.xcconfig"; sourceTree = "<group>"; };
+		ECCA53BA0E03B891FE9F8CD5 /* Pods_LittlePink.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LittlePink.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,18 +39,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB092617FE18914C95E7E6C /* Pods_LittlePink.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28BA89FB17198752F537AD6E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D793ED504BFD734F43A87884 /* Pods-LittlePink.debug.xcconfig */,
+				C436B2239D8A62A074D88030 /* Pods-LittlePink.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		729950C827D991AF00F0ECCA = {
 			isa = PBXGroup;
 			children = (
 				729950EB27D9938800F0ECCA /* .gitignore */,
 				729950D327D991AF00F0ECCA /* LittlePink */,
 				729950D227D991AF00F0ECCA /* Products */,
+				28BA89FB17198752F537AD6E /* Pods */,
+				F170233A06381FA58B30961D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,12 +82,20 @@
 				729950D627D991AF00F0ECCA /* SceneDelegate.swift */,
 				729950D827D991AF00F0ECCA /* ViewController.swift */,
 				729950DA27D991AF00F0ECCA /* Main.storyboard */,
+				729ECE8027D9D3AF00BDEE56 /* Launch Screen.storyboard */,
 				729950E027D991B000F0ECCA /* Assets.xcassets */,
-				729950E227D991B000F0ECCA /* LaunchScreen.storyboard */,
 				729950E527D991B000F0ECCA /* Info.plist */,
 				729950DD27D991AF00F0ECCA /* LittlePink.xcdatamodeld */,
 			);
 			path = LittlePink;
+			sourceTree = "<group>";
+		};
+		F170233A06381FA58B30961D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECCA53BA0E03B891FE9F8CD5 /* Pods_LittlePink.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -80,9 +105,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 729950E827D991B000F0ECCA /* Build configuration list for PBXNativeTarget "LittlePink" */;
 			buildPhases = (
+				02E21D6BFEAD9814A8A3CCAF /* [CP] Check Pods Manifest.lock */,
 				729950CD27D991AF00F0ECCA /* Sources */,
 				729950CE27D991AF00F0ECCA /* Frameworks */,
 				729950CF27D991AF00F0ECCA /* Resources */,
+				062268A752D688E222142196 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -131,13 +158,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				729950EC27D9938800F0ECCA /* .gitignore in Resources */,
-				729950E427D991B000F0ECCA /* LaunchScreen.storyboard in Resources */,
 				729950E127D991B000F0ECCA /* Assets.xcassets in Resources */,
+				729ECE8127D9D3AF00BDEE56 /* Launch Screen.storyboard in Resources */,
 				729950DC27D991AF00F0ECCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		02E21D6BFEAD9814A8A3CCAF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LittlePink-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		062268A752D688E222142196 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LittlePink/Pods-LittlePink-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		729950CD27D991AF00F0ECCA /* Sources */ = {
@@ -160,14 +229,6 @@
 				729950DB27D991AF00F0ECCA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		729950E227D991B000F0ECCA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				729950E327D991B000F0ECCA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -291,6 +352,7 @@
 		};
 		729950E927D991B000F0ECCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D793ED504BFD734F43A87884 /* Pods-LittlePink.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +372,7 @@
 		};
 		729950EA27D991B000F0ECCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C436B2239D8A62A074D88030 /* Pods-LittlePink.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
