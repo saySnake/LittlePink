@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		722EEF9127DB322E0019F7FB /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 722EEF9027DB322E0019F7FB /* README.md */; };
+		722EEF9E27DB3A3B0019F7FB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 722EEFA027DB3A3B0019F7FB /* InfoPlist.strings */; };
 		723FB7DC27DB042500031D4C /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723FB7DB27DB042500031D4C /* CHTCollectionViewWaterfallLayout.swift */; };
 		729950D527D991AF00F0ECCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729950D427D991AF00F0ECCA /* AppDelegate.swift */; };
 		729950D727D991AF00F0ECCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 729950D627D991AF00F0ECCA /* SceneDelegate.swift */; };
@@ -26,6 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		722EEF8F27DB321B0019F7FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		722EEF9027DB322E0019F7FB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		722EEF9F27DB3A3B0019F7FB /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		723FB7DB27DB042500031D4C /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		729950D127D991AF00F0ECCA /* LittlePink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LittlePink.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		729950D427D991AF00F0ECCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -69,9 +74,18 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		722EEFA127DB3ACE0019F7FB /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				722EEFA027DB3A3B0019F7FB /* InfoPlist.strings */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		729950C827D991AF00F0ECCA = {
 			isa = PBXGroup;
 			children = (
+				722EEF9027DB322E0019F7FB /* README.md */,
 				729950EB27D9938800F0ECCA /* .gitignore */,
 				729950D327D991AF00F0ECCA /* LittlePink */,
 				729950D227D991AF00F0ECCA /* Products */,
@@ -102,6 +116,7 @@
 				729950E027D991B000F0ECCA /* Assets.xcassets */,
 				729950E527D991B000F0ECCA /* Info.plist */,
 				729950DD27D991AF00F0ECCA /* LittlePink.xcdatamodeld */,
+				722EEFA127DB3ACE0019F7FB /* Resource */,
 			);
 			path = LittlePink;
 			sourceTree = "<group>";
@@ -193,6 +208,7 @@
 			knownRegions = (
 				en,
 				Base,
+				"zh-Hans",
 			);
 			mainGroup = 729950C827D991AF00F0ECCA;
 			productRefGroup = 729950D227D991AF00F0ECCA /* Products */;
@@ -210,7 +226,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				729950EC27D9938800F0ECCA /* .gitignore in Resources */,
+				722EEF9E27DB3A3B0019F7FB /* InfoPlist.strings in Resources */,
 				729950E127D991B000F0ECCA /* Assets.xcassets in Resources */,
+				722EEF9127DB322E0019F7FB /* README.md in Resources */,
 				729ECE8127D9D3AF00BDEE56 /* Launch Screen.storyboard in Resources */,
 				729950DC27D991AF00F0ECCA /* Main.storyboard in Resources */,
 			);
@@ -282,10 +300,19 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		722EEFA027DB3A3B0019F7FB /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				722EEF9F27DB3A3B0019F7FB /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		729950DA27D991AF00F0ECCA /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				729950DB27D991AF00F0ECCA /* Base */,
+				722EEF8F27DB321B0019F7FB /* zh-Hans */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -297,6 +324,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -330,6 +358,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_(NATIVE_ARCH_64_BIT))";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -358,6 +387,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -391,6 +421,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_(NATIVE_ARCH_64_BIT))";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -417,7 +448,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2WL944HFB;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_(NATIVE_ARCH_64_BIT))\n\n\n\n";
 				INFOPLIST_FILE = LittlePink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -437,7 +471,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = L2WL944HFB;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_ARCHS = "EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_simulator__NATIVE_ARCH_64_BIT_x86_64=arm64 arm64e armv7 armv7s armv6 armv8 EXCLUDED_ARCHS=(EXCLUDED_ARCHS__EFFECTIVE_PLATFORM_SUFFIX_(NATIVE_ARCH_64_BIT))\n\n\n\n";
 				INFOPLIST_FILE = LittlePink/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
